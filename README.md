@@ -18,22 +18,32 @@ Command
 Parameters:
 --test_data_path  
 path of input images
+
 --checkpoint_path=checkpoint/detect 
 path of model weights
+
 --output_chart_path 
+
 primary path of output of  table detection
+
     --output_chart_origin 
     secondary path，which saves the original images with tables and json file recorded the bounding boxes of tables in images.
+    
      --output_chart_view   
      secondary path，which saves the visualization of table detection of original images.
+     
 --output_nochart_path  
 path that saves the original images without tables
+
 --out_detect_path  
 primary path, which saves the  recognition results of characters in tables
+
       --out_detect_cut  
       secondary path, which saves the images of table cutting and bounding boxes of characters.
+      
       --out_detect_view 
       secondary path, which saves the visualization of character recognition in table.
+      
 --output_recog_path 
 directory, which records the resuts of character recognition 
 
