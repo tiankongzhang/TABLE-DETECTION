@@ -13,7 +13,8 @@ See [INSTALL.md](https://detectron2.readthedocs.io/tutorials/INSTALL.md).
 
 ### Method 1
 Command
-"sh run_whole_final.sh"
+
+     "sh run_whole_final.sh"
 
 Parameters:
 
