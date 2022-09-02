@@ -1,0 +1,49 @@
+一、环境配置
+1. 安装python3.6
+2. pip3 install tensorflow
+3. 用pip安装一下库
+shapely==1.5.13
+matplotlib==1.5.1
+scipy==0.19.0
+mahotas
+opencv
+pillow
+keras
+easydict
+
+4. cd detect_reg/lanms运行makefile
+   make clean
+   Make
+二、全流程模式（检索带表格图片---表格裁剪---单元格检测---表格识别）
+运行: sh run_whole_final.sh
+参数解析:
+   --test_data_path为输入图像目录
+   --checkpoint_path=checkpoint/detect为模型权值保存目录
+   --output_chart_path 为表格检测的一级目录
+        --output_chart_origin 为表格检测二级目录，存储判断为表格的原始图片，并保存相应json文件
+        --output_chart_view   为表格检测二级目录，展示判断为表格的原始图片的表格提取效果
+   --output_nochart_path  为非表格的图片存储目录
+   --out_detect_path  为表格中文本检测的一级目录
+         --out_detect_cut  储存图片中表格的截图以及相应的坐标数据json
+         --out_detect_view 展示图片表格中文本检测效果
+   --output_recog_path 为图片表格的识别效果(txt)
+
+三、半流程模式（该模式处理的是裁剪完成的唯一表格图片，单元格检测---表格识别）
+将需要处理的图片放入data_new
+运行：
+检测:  run_detect.sh
+   参数: --test_data_path 输入目录
+        --checkpoint_path 模型路径
+        --output_dir      输出目录(json文件)
+识别:  run_reg.sh
+   参数: --test_data_path 输入目录
+        --reg_data_path      输出目录
+检测加识别: run_detect_reg.sh
+4. 结果
+    检测的结果: data_new/jsondata
+    识别的结果: Result/reg.txt
+
+         
+   
+
+
