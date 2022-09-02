@@ -7,9 +7,9 @@ See [INSTALL.md](https://detectron2.readthedocs.io/tutorials/INSTALL.md).
 
 ## Whole Process 
 - Search the picture with table
-- table cutting
-- Cell detection
-- table recognition
+- Table cutting
+- Text detection
+- Text recognition
 
 ### Method 1
 Command
