@@ -1,5 +1,5 @@
 The code is to realize the table detection and character recognition in document. The method process is shown in following figure:
-![](https://github.com/tiankongzhang/TABLE-DETECTION/figs/framework.png)
+![](figs/framework.png)
 
 ## Installation
 
