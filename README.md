@@ -16,10 +16,13 @@ Command
 "sh run_whole_final.sh"
 
 Parameters:
+
 --test_data_path  
+
 path of input images
 
 --checkpoint_path=checkpoint/detect 
+
 path of model weights
 
 --output_chart_path 
@@ -27,9 +30,11 @@ path of model weights
 primary path of output of  table detection
 
     --output_chart_origin 
+    
     secondary path，which saves the original images with tables and json file recorded the bounding boxes of tables in images.
     
      --output_chart_view   
+     
      secondary path，which saves the visualization of table detection of original images.
      
 --output_nochart_path  
